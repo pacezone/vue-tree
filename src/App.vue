@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Tree :data='dataList'/>
+    <el-my-tree :data='dataList'></el-my-tree>
   </div>
 </template>
 
 <script>
 import Tree from './components/tree'
+import ElMyTree from './elementTree/elMyTree'
 import api from './fetch/api'
 export default {
   name: 'App',
   components: {
-    Tree
+    Tree,
+    ElMyTree
   },
   created(){
     
